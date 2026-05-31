@@ -1,49 +1,49 @@
 {
-    "BagButton": {
-        "desc": "大世界中的背包按钮",
+    "EscMenuButton": {
+        "desc": "大世界中的ESC菜单按钮",
         "recognition": "TemplateMatch",
         "roi": [
-            1098,
+            1208,
             5,
             60,
             60
         ],
         "template": [
-            "Common/Button/Bag.png",
-            "Common/Button/BagWithRedDot.png"
+            "Common/Button/InWorld/EscPhone.png",
+            "Common/Button/InWorld/EscPhoneWithRedDot.png"
         ],
         "green_mask": true,
         "pre_delay": 0,
         "post_delay": 0,
         "rate_limit": 0,
         "next": [
-            "AltClickBagButtonKeyDown"
+            "AltClickEscMenuButtonKeyDown"
         ]
     },
-    "AltClickBagButtonKeyDown": {
-        "desc": "使用 Alt + 点击大世界中的背包按钮（按住 Alt 键）",
+    "AltClickEscMenuButtonKeyDown": {
+        "desc": "使用 Alt + 点击大世界中的ESC菜单按钮（按住 Alt 键）",
         "pre_delay": 0,
         "action": "KeyDown",
         "key": 164, // 0xA4	Left Alt key
         "post_delay": 0,
         "rate_limit": 0,
         "next": [
-            "AltClickBagButtonClick"
+            "AltClickEscMenuButtonClick"
         ]
     },
-    "AltClickBagButtonClick": {
-        "desc": "使用 Alt + 点击大世界中的背包按钮（单击）",
+    "AltClickEscMenuButtonClick": {
+        "desc": "使用 Alt + 点击大世界中的ESC菜单按钮（单击）",
         "pre_delay": 0,
         "action": "Click",
-        "target": "BagButton",
+        "target": "EscMenuButton",
         "post_delay": 0,
         "rate_limit": 0,
         "next": [
-            "AltClickBagButtonKeyUp"
+            "AltClickEscMenuButtonKeyUp"
         ]
     },
-    "AltClickBagButtonKeyUp": {
-        "desc": "使用 Alt + 点击大世界中的背包按钮（释放 Alt 键）",
+    "AltClickEscMenuButtonKeyUp": {
+        "desc": "使用 Alt + 点击大世界中的ESC菜单按钮（释放 Alt 键）",
         "pre_delay": 0,
         "action": "KeyUp",
         "key": 164, // 0xA4	Left Alt key

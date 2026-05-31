@@ -1,48 +1,48 @@
 {
-    "ScarboroughFairButton": {
-        "desc": "大世界中的斯卡布罗集市按钮",
+    "ExitButton": {
+        "desc": "小世界中的退出按钮",
         "recognition": "TemplateMatch",
         "roi": [
-            985,
+            20,
             5,
             60,
             60
         ],
         "template": [
-            "Common/Button/ScarboroughFair.png"
+            "Common/Button/InWorld/Exit.png"
         ],
         "green_mask": true,
         "pre_delay": 0,
         "post_delay": 0,
         "rate_limit": 0,
         "next": [
-            "AltClickScarboroughFairButtonKeyDown"
+            "AltClickExitButtonKeyDown"
         ]
     },
-    "AltClickScarboroughFairButtonKeyDown": {
-        "desc": "使用 Alt + 点击大世界中的斯卡布罗集市按钮（按住 Alt 键）",
+    "AltClickExitButtonKeyDown": {
+        "desc": "使用 Alt + 点击小世界中的退出按钮（按住 Alt 键）",
         "pre_delay": 0,
         "action": "KeyDown",
         "key": 164, // 0xA4	Left Alt key
         "post_delay": 0,
         "rate_limit": 0,
         "next": [
-            "AltClickScarboroughFairButtonClick"
+            "AltClickExitButtonClick"
         ]
     },
-    "AltClickScarboroughFairButtonClick": {
-        "desc": "使用 Alt + 点击大世界中的斯卡布罗集市按钮（单击）",
+    "AltClickExitButtonClick": {
+        "desc": "使用 Alt + 点击小世界中的退出按钮（单击）",
         "pre_delay": 0,
         "action": "Click",
-        "target": "ScarboroughFairButton",
+        "target": "ExitButton",
         "post_delay": 0,
         "rate_limit": 0,
         "next": [
-            "AltClickScarboroughFairButtonKeyUp"
+            "AltClickExitButtonKeyUp"
         ]
     },
-    "AltClickScarboroughFairButtonKeyUp": {
-        "desc": "使用 Alt + 点击大世界中的斯卡布罗集市按钮（释放 Alt 键）",
+    "AltClickExitButtonKeyUp": {
+        "desc": "使用 Alt + 点击小世界中的退出按钮（释放 Alt 键）",
         "pre_delay": 0,
         "action": "KeyUp",
         "key": 164, // 0xA4	Left Alt key

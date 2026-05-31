@@ -7,6 +7,12 @@
             "entry": "AutoMakeCoffee",
             "option": [
                 "MakeCoffeeLoopTime"
+            ],
+            "controller": [
+                "Win32-Front"
+            ],
+            "group": [
+                "HethereauHobbies"
             ]
         }
     ],
